@@ -1,84 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albumphotos</title>
 </head>
 <body>
-    <div class="chat-container">
-        <div class="chat-header">Groupe de Discussion</div>
-        <div class="chat-messages" id="chatMessages">
-            <!-- Les messages seront chargés ici -->
-        </div>
-        <div class="chat-input-container">
-            <input type="text" class="chat-input" id="chatInput" placeholder=" Ecrivez votre message...">
-            <button class="chat-send-button" onclick="sendMessage()">Envoyer</button>
-        </div>
-    </div>
 
-   <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    .chat-container {
-        width: 400px;
-        max-width: 100%;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-    }
-    .chat-header {
-        background-color: #007BFF;
-        color: white;
-        padding: 10px;
-        text-align: center;
-    }
-    .chat-messages {
-        height: 300px;
-        overflow-y: auto;
-        padding: 10px;
-        background-color: #f9f9f9;
-    }
-    .chat-message {
-        margin-bottom: 10px;
-    }
-    .chat-message .username {
-        font-weight: bold;
-        color: #007BFF;
-    }
-    .chat-message .message {
-        margin-left: 5px;
-        display: inline-block;
-    }
-    .chat-input-container {
-        display: flex;
-        border-top: 1px solid #ddd;
-    }
-    .chat-input {
-        flex: 1;
-        padding: 10px;
-        border: none;
-        outline: none;
-    }
-    .chat-send-button {
-        background-color: #007BFF;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-    }
+    
+    <div class="side-left">
+        <style>
+            
+    
+            .message-container {
+                background: linear-gradient(135deg, #ff0000, #ff7f50);
+                border-radius: 15px;
+                color: white;
+                text-align: center;
+                padding: 40px 20px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            }
+    
+            .message-container h1 {
+                font-size: 3rem;
+                margin-bottom: 10px;
+                text-shadow: 2px 2px #800000;
+            }
+    
+            .message-container p {
+                font-size: 1.2rem;
+            }
+    
+            .snowflake {
+                font-size: 2rem;
+                margin: 0 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="message-container">
+            <h1>🎄 Joyeux Noël 🎄</h1>
+            <p>Nous vous souhaitons un Noël rempli de joie, d'amour et de bonheur. Merci de visiter notre site !</p>
+            <p>
+                <span class="snowflake">❄️</span>
+                <span class="snowflake">❄️</span>
+                <span class="snowflake">❄️</span>
+            </p>
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+            <h2>Nous aimerions connaître votre avis !</h2>
+            <p>Envoyez-nous un message pour nous faire savoir ce que vous pensez de notre site.</p>
+            
+            <form action="mailto:muhimuzilouis285@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Votre nom :</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Votre e-mail :</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Votre message :</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        
+        p {
+            text-align: center;
+            color: #777;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        textarea {
+            resize: vertical;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+    </style>  
+
+ </div>
+    
+
+
+
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mon Album Photos</h1>
+    </header>
+    <main class="album">
+        <div class="photo">
+            <img src="img/1721988710606.jpg" alt="Photo 1">
+        </div>
+        <div class="photo">
+            <img src="img/PXL_20241207_123934224.PORTRAIT~5.jpg" alt="Photo 2">
+        </div>
+        <div class="photo">
+            <img src="img/Photoroom-20241209_121559.png" alt="Photo 3">
+        </div>
+        <div class="photo">
+            <img src="img/Screenshot_20240721-062132~2.png" alt="Photo 4">
+        </div>
+        <div class="photo">
+            <img src="img/PXL_20241207_123934224.PORTRAIT~4.jpg" alt="Photo 5">
+        </div>
+        <div class="photo">
+            <img src="img/BIENFAIT_085832.jpg" alt="Photo 6">
+        </div>
+        <div class="photo">
+            <img src="img/FB_IMG_16980864083373039~2.jpg" alt="Photo 7">
+        </div>
+        <div class="photo">
+            <img src="img/at.png" alt="Photo 8">
+        </div>
+        <div class="photo">
+            <img src="img/1723749740350.jpg" alt="Photo 9">
+        </div>
+        <div class="photo">
+            <img src="img/1722105321755~2.jpg" alt="Photo 10">
+        </div>
+
+
+
+    </main>
+
+    <style>
+        /* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Album photo */
+.album {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.photo {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+.photo:hover {
+    transform: translateY(-5px);
+}
+
+
+    </style>
+
+</div>
+
+
+
+<div class="side-right">
+    <header>
+        <h1>Téléchargez nos photos</h1>
+    </header>
+    <main class="photo-gallery">
+        <div class="photo">
+            <img src="img/1721988710606 (2).jpg" alt="Photo 1">
+            <a href="img/1721988710606 (2).jpg" download="photo1.jpg" class="download-btn">Télécharger</a>
+        </div>
+        <div class="photo">
+            <img src="img/Photoroom-20241209_121559 (2).png" alt="Photo 2">
+            <a href="img/Photoroom-20241209_121559 (2).png" download="photo2.jpg" class="download-btn">Télécharger</a>
+        </div>
+        <div class="photo">
+            <img src="img/Screenshot_20240721-062132~2 (2).png" alt="Photo 3">
+            <a href="img/Screenshot_20240721-062132~2 (2).png" download="photo3.jpg" class="download-btn">Télécharger</a>
+        </div>
+        <!-- Ajoutez d'autres photos ici -->
+
+
+
+        <style>
+            
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #0073e6;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.photo {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #005bb5;
+}
+body{
+    background-color: darkblue;
+}
+.photo img {
+    width: 150px; /* Largeur de l'image */
+    height: 150px; /* Hauteur de l'image */
+    border-radius: 50%; /* Rend l'image circulaire */
+    object-fit: cover; /* Pour s'assurer que l'image s'adapte bien au cercle */
+    border: 2px solid #0073e6; /* Ajoute une bordure (optionnel) */
+}
+
+
+            
 </style>
+</main>
 
-
-
-
-
+</div>
 
 
     
+
+
+
+
+
+
+
+
+
+
+
+
     
 </body>
 </html>
-
